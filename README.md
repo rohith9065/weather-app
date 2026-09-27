@@ -32,16 +32,7 @@ A responsive weather application built with HTML, CSS and JavaScript.
 const API_KEY = "YOUR_OPENWEATHERMAP_API_KEY";
 ```
 
-with your API key:
-
-```javascript
-const API_KEY = "your_actual_api_key";
-```
-
 5. Open `index.html` in a browser.
 
 For best results, run it using VS Code Live Server.
 
-## Important
-
-Do not upload your real API key to a public GitHub repository. For a portfolio project, use an environment variable and a backend proxy if you need to keep the key private.
