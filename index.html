@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherNow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <h1>WeatherNow</h1>
+        <p>Real-time weather and 5-day forecast</p>
+      </div>x
+      <button id="unitToggle" class="unit-btn">°C / °F</button>
+    </header>
+
+    <section class="search-box">
+      <input id="cityInput" type="text" placeholder="Enter city name..." autocomplete="off">
+      <button id="searchBtn">Search</button>
+      <button id="locationBtn" title="Use my location">⌖</button>
+    </section>
+
+    <p id="status" class="status"></p>
+
+    <section id="currentWeather" class="current-card hidden">
+      <div>
+        <p id="location" class="location"></p>
+        <p id="date" class="date"></p>
+        <div class="current-main">
+          <img id="weatherIcon" src="" alt="Weather icon">
+          <div>
+            <span id="temperature" class="temperature"></span>
+            <p id="description"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="details">
+        <div><span>Feels like</span><strong id="feelsLike"></strong></div>
+        <div><span>Humidity</span><strong id="humidity"></strong></div>
+        <div><span>Wind</span><strong id="wind"></strong></div>
+        <div><span>Pressure</span><strong id="pressure"></strong></div>
+      </div>
+    </section>
+
+    <section id="forecastSection" class="hidden">
+      <h2>5-Day Forecast</h2>
+      <div id="forecast" class="forecast-grid"></div>
+    </section>
+
+    <footer>
+      Weather data provided by OpenWeatherMap
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
